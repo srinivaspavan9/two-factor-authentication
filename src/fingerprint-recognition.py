@@ -55,19 +55,19 @@ train_set, test_set = prepare_dataset(image_files)
 print('Size of the training set:', len(train_set))
 print('Size of the test set:', len(test_set))
 
-#print(train_set)
+print(train_set)
 # Next, we plot one image before and after converting it to grayscale and appling enhancement.
 
 # In[5]:
 
 
 plt.subplot(1, 2, 1)
-plt.title('Before enhancement')
+plt.title('Sample from DB')
 img_fpr = cv2.imread(image_files[72])
 plt.imshow(img_fpr, cmap='gray')
 plt.subplot(1, 2, 2)
-plt.title('After enhancement')
-plt.imshow(train_set['DB2_B\\110_5.tif'], cmap='gray')
+plt.title('Matched with Srinivas pavan')
+plt.imshow(train_set['110_5.tif'], cmap='gray')
 plt.show()
 
 

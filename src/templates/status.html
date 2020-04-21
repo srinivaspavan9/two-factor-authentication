@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block body%}
+<h4>Identified person :<h4>
+<br>
+<center>
+  <img src="static/random2.jpg" style="border-radius: 10px;">
+</center>
+<br>
+<center>
+  <form action="/finger" method="POST">
+    <input class='btn btn-danger' type="submit" value="Login">
+  </form>
+</center>
+<br>
+<br>
+{% endblock %}

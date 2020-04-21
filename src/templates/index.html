@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8  offset-lg-2">
+            <h4 class="mt-5">Postion your face in the below block</h4>
+            <img src="{{ url_for('video_feed') }}" width="100%" style="border-radius: 10px;">
+        </div>
+    </div>
+    <br>
+    <center>
+    <form action="/cap_image" method="POST">
+        <input class='btn btn-danger' type="submit" value="Authenticate">
+    </form>
+    </center>
+    <br>
+</div>
+{% endblock %}
